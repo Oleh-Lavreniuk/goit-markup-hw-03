@@ -1,0 +1,278 @@
+/* CSS rules to specify families
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+:root {
+  --accent-color: #2196f3;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --header-logo-sec-color: #000000;
+  --footer-logo-sec-color: #ffffff;
+  --background-color-light: #ffffff;
+  --secondary-bg-color-light: #f5f4fa;
+  --secondary-bg-color-dark: #2f303a;
+  --hero-btn-hover-color: #188ce8;
+  --hero-text-color: #ffffff;
+  --portfolio-btn-active-color: #ffffff;
+  --adress-color: #ffffff;
+  --footer-link-color: rgba(255, 255, 255, 0.6);
+}
+
+.visually-hidden {
+  /* Main - Характерные черты компании */
+  /* Portfolio - Projects List */
+  position: fixed;
+  transform: scale(0);
+}
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+
+/* === START COMPONENTS=== */
+
+.logo {
+  /* Logo used to header and footer */
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.h-logo-s {
+  color: var(--header-logo-sec-color);
+}
+.navigation,
+.header-contacts-list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/* === END COMPONENTS=== */
+
+.main-body {
+  font-family: "Roboto", sans-serif;
+  color: var(--main-text-color);
+}
+
+/* ===HEADER=== */
+.header {
+  background-color: var(--background-color-light);
+}
+
+.nav-list {
+}
+.nav-list-item {
+  color: inherit;
+}
+.nav-list-item:hover,
+.nav-list-item:focus {
+  color: var(--accent-color);
+}
+.nav-list .nav-list-item.current {
+  color: var(--accent-color);
+}
+
+.header-contacts {
+}
+.header-contacts-list-item {
+  color: var(--secondary-text-color);
+}
+.header-contacts-list-item:hover,
+.header-contacts-list-item:focus {
+  color: var(--accent-color);
+}
+/* ===HEADER END=== */
+
+/* ===MAIN=== */
+/* MAIN - SECTION-1 "hero" */
+.main {
+}
+.hero {
+  background-color: var(--secondary-bg-color-dark);
+}
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--hero-text-color);
+}
+.hero-btn {
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  color: var(--hero-text-color);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--hero-btn-hover-color);
+}
+
+/* MAIN - SECTION-2 "activity" (DIV-1, DIV-2) */
+/* DIV-1 - "description" */
+.activity {
+}
+.description {
+}
+.desc-title {
+}
+.desc-list {
+}
+.desc-list-item {
+}
+.desc-item-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.desc-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* DIV-2 - "workspace" */
+.workspace {
+}
+.workspace-staff-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.work-title-list {
+}
+.work-list-item {
+}
+.work-item-img {
+}
+
+/* MAIN - SECTION-3 "staff" */
+.staff {
+  background: var(--secondary-bg-color-light);
+}
+.staff-list {
+}
+.staff-list-person {
+  background-color: var(--background-color-light);
+}
+.staff-person-foto {
+}
+.staff-person-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.staff-person-position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* ===MAIN END=== */
+
+/* =====PORTFOLIO-MAIN (H1 + SECTION)===== */
+.port-main {
+}
+
+/* ====SECTION "port-projects" (UL-1 + UL-2)==== */
+.port-projects {
+}
+/* ===H1 - hidden=== */
+.port-prj-title {
+}
+
+/* ==UL-1 "prj-type"== */
+.port-prj-type {
+}
+.port-type-item {
+}
+.port-item-btn {
+  font-family: inherit;
+  background-color: var(--secondary-bg-color-light);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+.port-item-btn:hover,
+.port-item-btn:focus {
+  background-color: var(--accent-color);
+  color: var(--portfolio-btn-active-color);
+}
+
+/* ==UL-2 "prj-list"== */
+.port-prj-list {
+}
+.port-list-item {
+}
+.port-item-img {
+}
+.port-item-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.port-item-type {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* =====PORTFOLIO-MAIN END (H1 + SECTION)===== */
+
+/* ===FOOTER=== */
+.footer {
+  background-color: var(--secondary-bg-color-dark);
+}
+.f-logo-s {
+  color: var(--footer-logo-sec-color);
+}
+.footer-list {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.footer-list-item {
+}
+.address {
+  font-style: normal;
+}
+.address-link {
+  color: var(--adress-color);
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--accent-color);
+}
+.footer-list-item-link {
+  color: var(--footer-link-color);
+}
+.footer-list-item-link:hover,
+.footer-list-item-link:focus {
+  color: var(--accent-color);
+}
+/* ===FOOTER END=== */
