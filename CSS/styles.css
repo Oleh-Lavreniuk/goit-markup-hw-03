@@ -7,7 +7,7 @@ font-family: 'Roboto', sans-serif; */
   --main-text-color: #212121;
   --secondary-text-color: #757575;
   --header-logo-sec-color: #000000;
-  --footer-logo-sec-color: #ffffff;
+  --header-border-btm-cl: #ececec;
   --background-color-light: #ffffff;
   --secondary-bg-color-light: #f5f4fa;
   --secondary-bg-color-dark: #2f303a;
@@ -15,6 +15,7 @@ font-family: 'Roboto', sans-serif; */
   --hero-text-color: #ffffff;
   --portfolio-btn-active-color: #ffffff;
   --adress-color: #ffffff;
+  --footer-logo-sec-color: #ffffff;
   --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -93,6 +94,7 @@ img {
 
 /* ===HEADER=== */
 .header {
+  border-bottom: 1px solid var(--header-border-btm-cl);
   padding-top: 24px;
   padding-bottom: 24px;
   background-color: var(--background-color-light);
