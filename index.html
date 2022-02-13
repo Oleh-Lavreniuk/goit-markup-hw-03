@@ -5,48 +5,61 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio-Main</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <!-- Modern Normalize -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
+    />
+    <!-- Styles CSS -->
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
 
   <body class="main-body">
     <!-- ===HEADER=== -->
     <header class="header">
-      <a id="WebStudio" href="#WebStudio" lang="en" class="logo link">
-        Web<span class="h-logo-s">Studio</span>
-      </a>
-      <nav class="navigation">
-        <ul class="nav-list list">
-          <li>
-            <a class="nav-list-item current link" href="./index.html">Студия</a>
+      <div class="container hdr-container">
+        <a id="WebStudio" href="#WebStudio" lang="en" class="logo link">
+          Web<span class="h-logo-s">Studio</span>
+        </a>
+        <nav class="navigation">
+          <ul class="nav-list hdr-container list">
+            <li class="nav-list-item">
+              <a class="nav-list-link current link" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link link" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="nav-list-item">
+              <a class="nav-list-link link" href="./contacts.html">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts hdr-container list">
+          <li class="header-contacts-list">
+            <a
+              class="header-contacts-list-item link"
+              href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li>
-            <a class="nav-list-item link" href="./portfolio.html">Портфолио</a>
-          </li>
-          <li>
-            <a class="nav-list-item link" href="./contacts.html">Контакты</a>
+          <li class="header-contacts-list">
+            <a class="header-contacts-list-item link" href="tel:+380961111111"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-      <ul class="header-contacts list">
-        <li class="header-contacts-list">
-          <a
-            class="header-contacts-list-item link"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="header-contacts-list">
-          <a class="header-contacts-list-item link" href="tel:+380961111111"
-            >+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
+      </div>
     </header>
 
     <!-- ===MAIN=== -->

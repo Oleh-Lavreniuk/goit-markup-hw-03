@@ -18,6 +18,28 @@ font-family: 'Roboto', sans-serif; */
   --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .visually-hidden {
   /* Main - Характерные черты компании */
   /* Portfolio - Projects List */
@@ -30,7 +52,17 @@ font-family: 'Roboto', sans-serif; */
 .link {
   text-decoration: none;
 }
+.container {
+  width: 1200px;
+  margin-left: auto;
+  padding-left: 15px;
+  margin-right: auto;
+  padding-right: 15px;
+}
 
+.outline {
+  outline: 2px solid tomato;
+}
 /* === START COMPONENTS=== */
 
 .logo {
@@ -61,24 +93,41 @@ font-family: 'Roboto', sans-serif; */
 
 /* ===HEADER=== */
 .header {
+  padding-top: 24px;
+  padding-bottom: 24px;
   background-color: var(--background-color-light);
 }
 
+.hdr-container {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  margin-left: 94px;
+}
 .nav-list {
 }
-.nav-list-item {
+.nav-list-item:not(:first-child) {
+  margin-left: 50px;
+}
+.nav-list-link {
   color: inherit;
 }
-.nav-list-item:hover,
-.nav-list-item:focus {
+.nav-list-link:hover,
+.nav-list-link:focus {
   color: var(--accent-color);
 }
-.nav-list .nav-list-item.current {
+.nav-list .nav-list-link.current {
   color: var(--accent-color);
 }
 
 .header-contacts {
+  margin-left: auto;
 }
+.header-contacts-list:not(:first-child) {
+  margin-left: 50px;
+}
+
 .header-contacts-list-item {
   color: var(--secondary-text-color);
 }
