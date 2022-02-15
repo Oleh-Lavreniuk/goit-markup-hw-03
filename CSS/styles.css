@@ -14,6 +14,7 @@ font-family: 'Roboto', sans-serif; */
   --hero-btn-hover-color: #188ce8;
   --hero-text-color: #ffffff;
   --portfolio-btn-active-color: #ffffff;
+  --border-color: #eeeeee;
   --adress-color: #ffffff;
   --footer-logo-sec-color: #ffffff;
   --footer-link-color: rgba(255, 255, 255, 0.6);
@@ -347,10 +348,25 @@ img {
 
 /* ==UL-2 "prj-list"== */
 .port-prj-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 .port-list-item {
+  margin-top: 30px;
+}
+.port-list-item:not(:nth-child(3n + 1)) {
+  margin-left: 30px;
 }
 .port-item-img {
+}
+.port-item-wrapper {
+  box-sizing: border-box;
+  border: 1px solid var(--border-color);
+  border-top: none;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 .port-item-title {
   font-weight: 700;
