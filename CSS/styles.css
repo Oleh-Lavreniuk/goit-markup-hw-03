@@ -44,8 +44,14 @@ img {
 .visually-hidden {
   /* Main - Характерные черты компании */
   /* Portfolio - Projects List */
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 .list {
   list-style: none;
@@ -243,7 +249,7 @@ img {
   margin-left: 30px;
 }
 .work-item-img {
-  display: block;
+  width: 100%;
 }
 
 /* MAIN - SECTION-3 "staff" */
