@@ -249,7 +249,6 @@ img {
   margin-left: 30px;
 }
 .work-item-img {
-  width: 100%;
 }
 
 /* MAIN - SECTION-3 "staff" */
@@ -303,18 +302,37 @@ img {
 /* ====SECTION "port-projects" (UL-1 + UL-2)==== */
 .port-projects {
 }
+.port-wrapper {
+}
+
 /* ===H1 - hidden=== */
 .port-prj-title {
 }
 
 /* ==UL-1 "prj-type"== */
 .port-prj-type {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 16px;
+  margin-bottom: 4px;
 }
 .port-type-item {
 }
+.port-type-item:not(:first-child) {
+  margin-left: 8px;
+}
 .port-item-btn {
-  font-family: inherit;
   background-color: var(--secondary-bg-color-light);
+
+  border: 2px solid transparent;
+  border-radius: 4px;
+
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
