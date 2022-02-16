@@ -227,10 +227,10 @@ img {
 
 /* DIV-2 - "workspace" */
 .workspace {
+  margin-top: 94px;
 }
 .workspace-title {
-  margin-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 .workspace-title,
 .staff-title {
@@ -314,8 +314,7 @@ img {
 .port-prj-type {
   display: flex;
   justify-content: center;
-  padding-bottom: 16px;
-  margin-bottom: 4px;
+  margin-bottom: 50px;
 }
 .port-type-item {
 }
@@ -350,9 +349,13 @@ img {
 .port-prj-list {
   display: flex;
   flex-wrap: wrap;
+  margin-top: -30px;
+  margin-left: -30px;
 }
 .port-list-item {
   margin-top: 30px;
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
 }
 .port-list-item:not(:nth-child(3n + 1)) {
   margin-left: 30px;
@@ -386,10 +389,10 @@ img {
 /* ===FOOTER=== */
 .footer {
   background-color: var(--secondary-bg-color-dark);
-}
-.footer-wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+.footer-wrapper {
 }
 .f-logo-s {
   color: var(--footer-logo-sec-color);
